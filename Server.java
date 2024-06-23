@@ -8,12 +8,12 @@ public class Server {
         try {
             // Create a ServerSocket object
             ServerSocket serverSocket = new ServerSocket(portNumber);
-            
+
             System.out.println("Server is running and waiting for client connection...");
 
             // Wait for a client connection
             Socket clientSocket = serverSocket.accept();
-            
+
             System.out.println("Client connected: " + clientSocket.getInetAddress());
 
             // Get the input stream of the client socket

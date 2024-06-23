@@ -1,49 +1,58 @@
-#include <iostream> 
-using namespace std; 
+#include <iostream>
+using namespace std;
 
-int main() 
-{ 
+int main()
+{
     char a[200];
     cout << "Enter the String: ";
     cin >> a;
 
-    cout<<endl;
-    for (int i = 0; a[i] != '\0'; ++i) {
+    cout << endl;
+    for (int i = 0; a[i] != '\0'; ++i)
+    {
         char currentChar = a[i];
-        cout<<"   "<<currentChar<<"   ";
+        cout << "   " << currentChar << "   ";
     }
-    cout<<endl;
-    for (int i = 0; a[i] != '\0'; ++i) {
+    cout << endl;
+    for (int i = 0; a[i] != '\0'; ++i)
+    {
         char currentChar = a[i];
-        if(currentChar == '0'){
-            cout<<"  LOW  ";
+        if (currentChar == '0')
+        {
+            cout << "  LOW  ";
         }
-        else{
-            cout<<"  HIGH ";
+        else
+        {
+            cout << "  HIGH ";
         }
     }
-    cout<<endl;
-    for (int i = 0; a[i] != '\0'; ++i) {
+    cout << endl;
+    for (int i = 0; a[i] != '\0'; ++i)
+    {
         char currentChar = a[i];
-        cout<<"      |";
+        cout << "      |";
     }
-    cout<<endl;
+    cout << endl;
 
     // if 0 the low and 1 then high
-    for (int i = 0; a[i] != '\0'; ++i) {
+    for (int i = 0; a[i] != '\0'; ++i)
+    {
         char currentChar = a[i];
-        if(currentChar == '0'){
-            cout<<"______|";
+        if (currentChar == '0')
+        {
+            cout << "______|";
         }
-        else{
-            cout<<"‾‾‾‾‾‾|";
+        else
+        {
+            cout << "‾‾‾‾‾‾|";
         }
     }
-    cout<<endl;
-    for (int i = 0; a[i] != '\0'; ++i) {
+    cout << endl;
+    for (int i = 0; a[i] != '\0'; ++i)
+    {
         char currentChar = a[i];
-        cout<<"      |";
+        cout << "      |";
     }
 
-    return 0; 
+    return 0;
 }
