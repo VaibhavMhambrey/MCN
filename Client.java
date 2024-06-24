@@ -17,7 +17,7 @@ public class Client {
             PrintWriter out = new PrintWriter(outputStream, true);
 
             // Send a message to the server
-            out.println("Hello, server! , I am Diggaj Ugvekar");
+            out.println("Hello, server! , I am Vaibhav Mhambrey");
 
             // Close the socket
             socket.close();
